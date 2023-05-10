@@ -1,9 +1,9 @@
 // Navigation
-var navLocation = 'home';
+var navLocation = '#home';
 $('.nav-link').click(function(e){
-    $('#'+navLocation).css("display", "none");
-    navLocation = e.target.innerHTML.toLowerCase();
-    $('#'+navLocation).css("display", "block");
+    $(navLocation).css("display", "none");
+    navLocation = "#"+e.target.innerHTML.toLowerCase();
+    $(navLocation).css("display", "block");
 });
 
 const customerTable = document.getElementById('tblCustomer');
