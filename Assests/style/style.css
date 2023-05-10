@@ -2,9 +2,6 @@
     font-weight: bold;
     color: #f1c40f;
 }
-.nav-btn{
-    color: #000000;
-}
 thead{
     position: sticky;
     top: 0;
@@ -16,10 +13,11 @@ thead{
 .table-wrapper-scroll-y {
     display: block;
 }
-.nav-btn:hover{
-    color: #1b88cc;
+.nav-link:hover{
+    color: black;
 }
 #main{
+    display: block;
     width: 100%;
 }
 #order,#item,#customer{

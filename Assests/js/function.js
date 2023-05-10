@@ -1,17 +1,9 @@
 // Navigation
-$('.nav-btn').click(function(e){
-    var location;
-    $('#main').css("display", "none");
-    $('#order').css("display", "none");
-    $('#item').css("display", "none");
-    $('#customer').css("display", "none");
-    switch (e.target.id){
-        case "btnHome": location = "main";break;
-        case "btnOrder": location = "order";break;
-        case "btnItems": location = "item";break;
-        case "btnCustomer": location = "customer";break;
-    }
-    $('#'+location).css("display", "block");
+var navLocation = 'home';
+$('.nav-link').click(function(e){
+    $('#'+navLocation).css("display", "none");
+    navLocation = e.target.innerHTML.toLowerCase();
+    $('#'+navLocation).css("display", "block");
 });
 
 const customerTable = document.getElementById('tblCustomer');
